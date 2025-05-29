@@ -1,4 +1,4 @@
-using Ark.SingalR;
+using Ark.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.

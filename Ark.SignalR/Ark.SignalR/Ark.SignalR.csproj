@@ -1,15 +1,30 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<OutputType>Library</OutputType>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Version>0.0.1</Version>
+		<Version>0.0.2</Version>
 		<IsPackable>true</IsPackable>
+		<Description>
+			v0.0.2 - enable ark signalr version update
+		</Description>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<PackageIcon>ark_logo.png</PackageIcon>
+		<Authors>Immanuel R</Authors>
+		<Title>Simple SignalR Library</Title>
+		<PackageTags>SignalR, WebSocket; Immanuel R, ARK</PackageTags>
+		<PackageReleaseNotes>This is a simple socket library</PackageReleaseNotes>
+		<RepositoryUrl>https://github.com/ir-dev/Ark.SignalR</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryBranch>main</RepositoryBranch>
 	</PropertyGroup>
-
+	<ItemGroup>
+		<None Include="Icon\ark_logo.png" Pack="true" PackagePath="" />
+	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson" Version="8.0.7" />
 	</ItemGroup>
